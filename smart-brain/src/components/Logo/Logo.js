@@ -2,7 +2,7 @@ import React from "react";
 import "tachyons";
 import Tilt from "react-tilt";
 import "./Logo.css";
-import "./brain.png";
+import brain from "./brain.png";
 
 const Logo = () => {
   return (
