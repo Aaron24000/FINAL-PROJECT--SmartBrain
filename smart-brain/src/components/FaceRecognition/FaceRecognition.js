@@ -3,7 +3,7 @@ import 'tachyons';
 import 'clarifai';
 import './FaceRecognition.css';
 
-const FaceRecognition = ({imageUrl}) => {
+const FaceRecognition = ({imageUrl, box}) => {
     return (
         <div className='center ma'>
             <div className='absolute mt2'>
