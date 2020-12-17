@@ -7,6 +7,7 @@ import Rank from "./components/Rank/Rank";
 import Particles from "react-particles-js";
 import Clarifai from "clarifai";
 import FaceRecognition from './components/FaceRecognition/FaceRecognition';
+import SignIn from './components/SignIn/SignIn';
 
 const app = new Clarifai.App({
   apiKey: "8a36c2f5e8ac47f18602f2c3c0ebc3b8",
@@ -71,6 +72,7 @@ class App extends Component {
     return (
       <div className="App">
         <Particles className="particles" params={particlesOptions} />
+        <SignIn />
         <Navigation />
         <Logo />
         <Rank />
