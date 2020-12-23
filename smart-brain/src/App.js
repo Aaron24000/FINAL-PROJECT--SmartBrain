@@ -97,11 +97,11 @@ class App extends Component {
           })
             .then((response) => response.json())
             .then((count) => {
-              this.setState(Object.assign(this.state.user, { entries: count }));
+              this.setState(Object.assign(this.state.user, { entries: count }))
             })
-            .catch(console.log);
+            .catch(console.log)
         }
-        this.displayFaceBox(this.calculateFaceLocation(response));
+        this.displayFaceBox(this.calculateFaceLocation(response))
       })
       .catch((err) => console.log(err));
   };
@@ -110,7 +110,7 @@ class App extends Component {
     if (route === "signout") {
       this.setState(initialState)
     } else if (route === "home") {
-      this.setState({ isSignedIn: true });
+      this.setState({ isSignedIn: true })
     }
     this.setState({ route: route });
   }
